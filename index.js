@@ -39,7 +39,7 @@ const { authenToken } = require("./middlewares/tokenMW");
 //     if (!refreshToken) res.sendStatus(401)
 
 // })
-app.get("/api/book", authenToken, checkRole("admin"), function (req, res) {
+app.get("/api/book", function (req, res) {
     res.json({ status: 'Success', data: 123 });;
 });
 
