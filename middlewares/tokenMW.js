@@ -4,7 +4,6 @@ function authenToken(req, res, next) {
     // 'Beaer [token]'
     const token = authorizationHeader.split(' ')[1];
     if (token === "null") {
-
         return res.status(401).json("Vui lòng đăng nhập"); // lỗi chưa đăng nhập
     }
     else {

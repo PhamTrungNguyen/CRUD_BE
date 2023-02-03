@@ -4,8 +4,8 @@ const { AuthRegisterValidator, AuthLoginValidator } = require('../middlewares/va
 // const { authenToken } = require('../middlewares/token')
 
 
-router.post('/createAccount', AuthRegisterValidator(), authController.createAccount)
-router.post('/loginAccount', AuthLoginValidator(), authController.loginAccount)
+router.post('/createAccount', authController.createAccount)
+router.post('/loginAccount', authController.loginAccount)
 // router.post('/createAccount', authController.createAccount)
 
 
